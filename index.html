@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Сайт</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1 align="center">Обычный сайт</h1>
+		<div>
+			<h2 class="section-title">Мои контакты</h2>
+			<div>
+				<h3 style="color: blue;">Я в соц. сетях</h3>
+				<ul>
+					<li><a href="https://www.facebook.com/amirzhan.ryskali.1/" target="_blank" title="Перейти на мою страничку в facebook">Я в FB</a></li>
+				</ul>
+			<form action="auth.php" method="post">
+				<input type="text" name="name" id="name" placeholder="Введите имя">
+				<input type="password" name="pswrd" id="pass" placeholder="Введите пароль">
+				<input type="submit" id="submit" value="Войти">
+				<input type="reset">
+			</form>
+			</div>
+		</div>
+		<div>
+			<h2 class="section-title">Html</h2>
+			<div>
+				<img src="https://webref.ru/assets/images/book/html5.png" alt="Рисунок html" title="HTML5">
+			</div>
+			<div>
+				<h3>Моя биография</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный риторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель</p>
+			</div>
+		</div>
+		<div>
+			<h2 class="section-title">Моя статистика</h2>
+			<table border="1" cellpadding="10" cellspacing="1">
+				<tr bgcolor="#cacaca">
+					<th>Вид проекта</th>
+					<th>Сделано</th>
+					<th>Выкуплено</th>
+				</tr>
+				<tr>
+					<td>Статичных</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Адаптивных</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2 class="section-title">Заказать у меня сайт</h2>
+			<form action="order.php" method="post">
+				<div>
+					<label for="client_name">
+						<span>Введите имя</span>
+					</label>
+					<input type="text" id="client_name" name="client_name" placeholder="Введите имя">
+				</div>
+				<div>
+					<label>
+						<span>Введите почту</span>
+						<input type="text" name="client_email" placeholder="Введите email">
+					</label>
+				</div>
+				<div>
+					<label>
+						<span>Выберите пол</span>
+						<input type="radio" name="gendre" value="male"> М
+						<input type="radio" name="gendre" value="male"> Ж
+					</label>
+				</div>
+			<div>
+				<label>
+					<span>Дополнительные возможности</span>
+					<input type="checkbox" name="extra" value="adaptive">Адаптивность
+					<input type="checkbox" name="extra" value="hosting">Установка на хостинг
+					<input type="checkbox" name="extra" value="support">Дальнейшая поддержка
+					<input type="checkbox" name="extra" value="admin">Установка админ-панели
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Тип сайта</span>
+					<select name="type">
+						<option value="eshop">Интернет-магазин</option>
+						<option value="landing">Лэндинг</option>
+						<option value="card">Сайт-визитка</option>
+					</select>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Приложите эскиз</span>
+					<input type="file" name="file">
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Ваш комментраий</span>
+					<textarea name="comment" cols="30" rows="10" maxlength="100"></textarea>
+				</label>
+			</div>
+			<div>
+				<input type="reset" value="Сброс">
+				<button name="submit">Отправить</button>
+			</div>
+			</form>	
+		</div>
+	</body>
+</html>
